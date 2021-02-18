@@ -4,13 +4,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from astropy.io import ascii
+import astropy.units as u
+
+comp = pd.read('../Data/compounds.ecsv')
 
 # Read in the data
 data = np.genfromtxt('../Data/PeaksInOrbit.dat')
 ttot = data[:,0]
 Itot = data[:,1]
-
-comp = pd.read_csv('../Data/comp.csv')
 
 # Plotting
 for row in range(len(comp)):

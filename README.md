@@ -1,5 +1,11 @@
 # LavaBowsPaper
 
+Update 2/18
+I copied over the MIECODE results into /Data/ into their own directory, then separated by compound. FluxDoP.py and variations reference these files to create flux and degree of polarization (DoP) plots. These plots are in their own directory in /Figures/ and are named with the compound, droplet size in um, and wavelength in nm.
+
+Update 2/2  
+Master.ipynb is copied from the original repo and updated to enter all information in the first cell, then run all cells to create all figures.
+
 Scripts to create the plots are in the Scripts directory. The plots are in the Figures directory. Data files are in the Data directory when it is impractical to have the data in the python script. Here is a list of the scripts and their corresponding data files and figures:
 
 * LiquidCompounds.py creates TempofPlanetsandComp.png
