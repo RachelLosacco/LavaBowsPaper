@@ -17,6 +17,8 @@ for wave in wavelength:
     flux.append(data[:,2])
     dop.append(data[:,-1])
 
+angle = 180 - data[:,0]
+
 # Plot flux vs. angle
 plt.plot(angle, flux[0], 'b-', label='400nm')
 plt.plot(angle, flux[1], 'g-', label='550nm')
@@ -44,7 +46,7 @@ plt.title('Degree fo Polarization for MgO')
 plt.savefig('../Figures/MIECODEResults/MgO'+r+'dop2.png', bbox_inches='tight')
 plt.close()
 
-# Zoom in of flux between 20 adn 40 degrees
+# Zoom in of flux between 20 and 40 degrees
 plt.plot(angle, flux[0], 'b-', label='400nm')
 plt.plot(angle, flux[1], 'g-', label='550nm')
 plt.plot(angle, flux[2], 'r-', label='800nm')
@@ -57,6 +59,6 @@ plt.legend(bbox_to_anchor=(1., 1.))
 plt.xlabel('Angle (degrees)')
 plt.ylabel('Flux')
 plt.yscale('log')
-plt.title('Flux for '+chem)
+plt.title('Flux for MgO')
 plt.savefig('../Figures/MIECODEResults/MgO'+r+'dop3.png', bbox_inches='tight')
 plt.close()
