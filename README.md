@@ -1,5 +1,8 @@
 # LavaBowsPaper
 
+Update 5/18
+The odl data is in /Data_Old/, while the 0.5um data is now in /Data/. I've run the original mie code and the miex/dapx/pixx code on this 0.5um data, and the resulting figures have been added to /Figures/.
+
 Update 2/18
 I copied over the MIECODE results into /Data/ into their own directory, then separated by compound. FluxDoP.py and variations reference these files to create flux and degree of polarization (DoP) plots. These plots are in their own directory in /Figures/ and are named with the compound, droplet size in um, and wavelength in nm.
 
